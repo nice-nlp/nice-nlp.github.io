@@ -26,6 +26,9 @@
         .el-menu-item {
             width: 50px;
         }
+        .el-menu-item:visited {
+            font-weight: 700;
+        }
 
         .el-aside {
             /* background-color: #5297e6; */
@@ -173,7 +176,7 @@
             <div>
                 <el-container>
                 <el-aside width="150px">
-                    <div style="display: flex; flex-direction: column; gap: 5px;margin-top: 120px; height: 120px;width: 150px;overflow-y: auto;">
+                    <div style="display: flex; flex-direction: column; gap: 5px;margin-top: 120px; height: 180px;width: 150px;overflow-y: auto;">
                         <el-tag size="small"
                        style="padding: 5px 10px; background-color: #f0f0f0; border-radius: 5px;"
                        @click="handleTagClick()">tag 1</el-tag>

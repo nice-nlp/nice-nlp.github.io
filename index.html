@@ -1,1 +1,350 @@
-<h1>NICE</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <!-- import Vue before Element -->
+    <script src="https://unpkg.com/vue@2/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-router@3.0.1/dist/vue-router.js"></script>
+    <!-- import JavaScript -->
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NICE-NLP</title>
+    <style scoped>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .el-header {
+            /* background-color: #E9EEF3; */
+            line-height: 50px;
+        }
+
+        .el-menu-item {
+            width: 50px;
+        }
+
+        .el-aside {
+            /* background-color: #5297e6; */
+            text-align: center;
+            line-height: 200px;
+
+        }
+
+        /* .el-main {
+            background-color: #E9EEF3;
+            margin:0 auto;
+        } */
+
+        body>.el-container {
+            margin-bottom: 40px;
+        }
+
+        .el-container:nth-child(5) .el-aside,
+        .el-container:nth-child(6) .el-aside {
+            line-height: 260px;
+        }
+
+        .el-container:nth-child(7) .el-aside {
+            line-height: 320px;
+        }
+
+        .el-tag--small {
+            line-height: 10px;
+        }
+
+        .top p,
+        .top img {
+            float: left;
+        }
+
+        .top img {
+            margin-left: 150px;
+        }
+
+        .top p {
+            margin-left: 100px;
+        }
+
+        .box {
+            width: 900px;
+            margin: 30px auto;
+        }
+
+        .previous {
+            height: 225px;
+            overflow-y: auto;
+        }
+
+        .info {
+            float: left;
+            padding-left: 30px;
+        }
+
+        .info p {
+            line-height: 26px;
+        }
+
+        .QR {
+            float: right;
+            padding-right: 40px;
+        }
+
+        a {
+            display: block;
+            width: 380px;
+            font-size: 14px;
+            text-decoration: none;
+            color: black;
+            word-break: break-all
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .video:hover {
+            border: 1px solid black;
+        }
+
+        .member1 {
+            float: left;
+            width: 200px;
+            height: 400px;
+            margin-right: 10px;
+            background-color: pink;
+        }
+
+        .el-row {
+            margin: 0 auto;
+            margin-bottom: 20px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        .el-col {
+            border-radius: 4px;
+            margin-right: 25px;
+        }
+
+        .bg-purple {
+            background: #d3dce6;
+        }
+
+        .bg-purple-light {
+            background: #e5e9f2;
+        }
+
+        .grid-content {
+            border-radius: 4px;
+            min-height: 36px;
+        }
+
+        .grid-content>p {
+            padding-left: 10px;
+            line-height: 26px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <el-container>
+            <el-header>
+                <el-menu default-active="1" class="el-menu-demo" mode="horizontal">
+                    <el-menu-item><router-link to="/home">主页</router-link></el-menu-item>
+                    <el-menu-item><router-link to="/members">成员</router-link></el-menu-item>
+                </el-menu>
+            </el-header>
+
+            <router-view></router-view>
+        </el-container>
+
+    </div>
+    <script>
+        Vue.use(VueRouter);
+        const Home = {
+            template: `
+            <div>
+                <el-container>
+                <el-aside width="150px">
+                    <div style="display: flex; flex-direction: column; gap: 5px;margin-top: 120px; height: 120px;width: 150px;overflow-y: auto;">
+                        <el-tag size="small"
+                       style="padding: 5px 10px; background-color: #f0f0f0; border-radius: 5px;"
+                       @click="handleTagClick()">tag 1</el-tag>
+                        <el-tag size="small"
+                            style="padding: 5px 10px; background-color: #f0f0f0; border-radius: 5px;">tag 2</el-tag>
+                        <el-tag size="small"
+                            style="padding: 5px 10px; background-color: #f0f0f0; border-radius: 5px;">tag 3</el-tag>
+                        <el-tag size="small"
+                            style="padding: 5px 10px; background-color: #f0f0f0; border-radius: 5px;">tag 4</el-tag>
+                        <el-tag size="small"
+                            style="padding: 5px 10px; background-color: #f0f0f0; border-radius: 5px;">tag 5</el-tag>
+                    </div>
+                </el-aside>
+                <el-main>
+                    <div class="top" style="width: 1000px; overflow: auto;">
+                        <img src="logo.png" alt="">
+                        <p style="width: 400px;">文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍</p>
+                    </div>
+                    <div class="box">
+                        <el-card :body-style="{ padding: '0px' }" class="subscribe">
+                            <div style="padding: 14px;">
+                                <h4 style="padding-left: 20px;">【预约】</h4>
+                                <div class="info">
+                                    <p>主题：XXXXX <el-tag size="mini">tag 1</el-tag> <el-tag size="mini">tag 2</el-tag>
+                                    </p>
+                                    <p>时间：2024.6.18 10:30-11:30</p>
+                                    <p>讲者：xxx 苏州大学 在读PhD</p>
+                                    <p>主持人：xxx</p>
+                                </div>
+                                <div class="QR">
+                                    <img src="QR.jpg" width="100px">
+                                    <p style="font-size: 14px; display: block; text-align: center;">微信扫码预约</p>
+                                </div>
+
+                            </div>
+                        </el-card>
+                        <el-card :body-style="{ padding: '0px' }" class="previous" ref="previous">
+                            <div class="ten" style="padding: 14px;">
+                                <h4 style="padding-left: 20px;">【往期】</h4>
+                                <div class="info">
+                                    <p>【10】主题：XXXXX <el-tag size="mini">tag 1</el-tag></p>
+                                    <p>时间：2024.6.18 10:30-11:30</p>
+                                    <p>讲者：xxx 苏州大学 在读PhD</p>
+                                    <a href="https://www.bilibili.com/video/BV1dS411P7Y7/?spm_id_from=333.999.0.0&vd_source=6dd0ac39d0e1e0699ee7a4d0fe7cd5ef"
+                                        target="_blank">链接：https://www.bilibili.com/video/BV1dS411P7Y7/?spm_id_from=333.999.0.0&vd_source=6dd0ac39d0e1e0699ee7a4d0fe7cd5ef</a>
+                                </div>
+                                <div class="QR">
+                                    <img class="video" src="video.jpg" width="350px"
+                                        onclick="window.open('https://www.bilibili.com/video/BV1dS411P7Y7/?spm_id_from=333.999.0.0&vd_source=6dd0ac39d0e1e0699ee7a4d0fe7cd5ef')">
+                                </div>
+                            </div>
+                            <div class="nine" style="padding: 14px;">
+                                <div class="info">
+                                    <el-divider orientation="vertical"></el-divider> <!-- 添加分割线 -->
+                                    <p>【9】主题：XXXXX <el-tag size="mini">tag 1</el-tag></p>
+                                    <p>时间：2024.6.18 10:30-11:30</p>
+                                    <p>讲者：xxx 苏州大学 在读PhD</p>
+                                    <a href="https://www.bilibili.com/video/BV1dS411P7Y7/?spm_id_from=333.999.0.0&vd_source=6dd0ac39d0e1e0699ee7a4d0fe7cd5ef"
+                                        target="_blank">链接：https://www.bilibili.com/video/BV1dS411P7Y7/?spm_id_from=333.999.0.0&vd_source=6dd0ac39d0e1e0699ee7a4d0fe7cd5ef</a>
+                                </div>
+                                <div class="QR">
+                                    <img class="video" src="video.jpg" width="350px"
+                                        onclick="window.open('https://www.bilibili.com/video/BV1dS411P7Y7/?spm_id_from=333.999.0.0&vd_source=6dd0ac39d0e1e0699ee7a4d0fe7cd5ef')">
+                                </div>
+                            </div>
+                        </el-card>
+                    </div>
+                </el-main>
+            </el-container>
+            </div>
+            `
+        };
+
+        const Members = {
+            template: `
+            <el-main style="padding-left: 30px;">
+                <h2 style="font-weight: 400; padding-left: 10px;">成员</h2>
+                <el-row style="margin-top: 10px;">
+                    <el-col :span="4">
+                        <div class="grid-content bg-purple" style="margin-left: 5px;">
+                            <img src="QR.jpg" width="100%" style="margin: 0 auto;">
+                            <p>姓名</p>
+                            <p>在读PhD</p>
+                            <p>香港大学</p>
+                        </div>
+                    </el-col>
+                    <el-col :span="4">
+                        <div class="grid-content bg-purple">
+                            <img src="QR.jpg" width="100%" style="margin: 0 auto;">
+                            <p>姓名</p>
+                            <p>在读PhD</p>
+                            <p>香港大学</p>
+                        </div>
+                    </el-col>
+                    <el-col :span="4">
+                        <div class="grid-content bg-purple">
+                            <img src="QR.jpg" width="100%" style="margin: 0 auto;">
+                            <p>姓名</p>
+                            <p>在读PhD</p>
+                            <p>香港大学</p>
+                        </div>
+                    </el-col>
+                    <el-col :span="4">
+                        <div class="grid-content bg-purple">
+                            <img src="QR.jpg" width="100%" style="margin: 0 auto;">
+                            <p>姓名</p>
+                            <p>在读PhD</p>
+                            <p>香港大学</p>
+                        </div>
+                    </el-col>
+                    <el-col :span="4">
+                        <div class="grid-content bg-purple">
+                            <img src="QR.jpg" width="100%" style="margin: 0 auto;">
+                            <p>姓名</p>
+                            <p>在读PhD</p>
+                            <p>香港大学</p>
+                        </div>
+                    </el-col>
+                </el-row>
+                <h2 style="font-weight: 400; padding-left: 10px;">前端</h2>
+                <el-row style="margin-top: 10px;">
+                    <el-col :span="4">
+                        <div class="grid-content bg-purple" style="margin-left: 5px;">
+                            <img src="QR.jpg" width="100%" style="margin: 0 auto;">
+                            <p>姓名</p>
+                            <p>在读PhD</p>
+                            <p>香港大学</p>
+                        </div>
+                    </el-col>
+                </el-row>
+            </el-main>
+            `
+        };
+        const routes = [
+            { path: '/home', component: Home },
+            { path: '/members', component: Members }
+        ];
+
+        const router = new VueRouter({
+            routes,
+            redirect: '/home'
+        });
+        new Vue({
+            el: '#app',
+            router,
+            data() {
+                return {
+                    tag: 'tag 1'
+                };
+            },
+            methods: {
+                handleTagClick() {
+                    // 根据标签的内容找到对应的 el-card
+                    // const card = this.$el.querySelector('.previous');
+
+                    // // 如果找到对应的 el-card
+                    // if (card) {
+                    //     // 在 el-card 中查找与标签内容匹配的第一个 tag
+                    //     const targetTag = card.querySelector(`.info p:contains(${tag}) +.el-tag`);
+
+                    //     // 如果找到匹配的 tag，使用 scrollIntoView 方法将其滚动到可见区域
+                    //     if (targetTag) {
+                    //         targetTag.scrollIntoView({ behavior: 'smooth' });
+                    //     }
+                    // }
+                
+                }
+            }
+        });
+
+    </script>
+</body>
+
+</html>

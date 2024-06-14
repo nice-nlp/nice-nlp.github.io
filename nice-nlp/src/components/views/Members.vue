@@ -10,40 +10,36 @@
               width="100%"
               style="margin: 0 auto"
             />
-            <p>甄冉冉</p>
-            <p>苏州大学博士生</p>
+            <p class="name">甄冉冉</p>
+            <p class="school">苏州大学博士生</p>
           </div>
         </el-col>
         <el-col :span="4">
           <div class="grid-content bg-purple">
             <img src="@/assets/image/zx.png" width="100%" style="margin: 0 auto" />
-            <p>张鑫</p>
-            <p>哈尔滨工业大学(深圳)博士生</p>
-            <p><a href="https://izhx.github.io" target="_blank">izhx.github.io</a></p>
+            <p class="name"><a href="https://izhx.github.io" target="_blank">张鑫</a></p>
+            <p class="school">哈尔滨工业大学(深圳)博士生</p>
           </div>
         </el-col>
         <el-col :span="4">
           <div class="grid-content bg-purple">
             <img src="@/assets/image/zy.png" width="100%" style="margin: 0 auto" />
-            <p>章岳</p>
-            <p>字节跳动研究员</p>
-            <p><a href="hillzhang1999.github.io" target="_blank">https://hillzhang1999.github.io</a></p>
+            <p class="name"><a href="hillzhang1999.github.io" target="_blank">章岳</a></p>
+            <p class="school">字节跳动研究员</p>
           </div>
         </el-col>
         <el-col :span="4">
           <div class="grid-content bg-purple">
             <img src="@/assets/image/lyh.png" width="100%" style="margin: 0 auto" />
-            <p>李映辉</p>
-            <p>清华大学博士生</p>
-            <p><a href="https://scholar.google.com/citations?user=xTM9pKsAAAAJ&hl=en&oi=sra" target="_blank">https://scholar.google.com/citations?user=xTM9pKsAAAAJ&hl=en&oi=sraa</a></p>
+            <p class="name"><a href="https://scholar.google.com/citations?user=xTM9pKsAAAAJ&hl=en&oi=sra" target="_blank">李映辉</a></p>
+            <p class="school">清华大学博士生</p>
           </div>
         </el-col>
         <el-col :span="4">
           <div class="grid-content bg-purple">
             <img src="@/assets/image/whr.png" width="100%" style="margin: 0 auto" />
-            <p>王鸿儒</p>
-            <p>香港中文大学博士生</p>
-            <p><a href="https://ruleGreen.github.io" target="_blank">https://ruleGreen.github.io</a></p>
+            <p class="name"><a href="https://ruleGreen.github.io" target="_blank">王鸿儒</a></p>
+            <p class="school">香港中文大学博士生</p>
           </div>
         </el-col>
       </el-row>
@@ -51,17 +47,15 @@
         <el-col :span="4">
           <div class="grid-content bg-purple" style="margin-left: 5px">
             <img src="@/assets/image/xby.png" width="100%" style="margin: 0 auto" />
-            <p>薛博阳</p>
-            <p>香港中文大学博士生</p>
-            <p><a href="https://amourwaltz.github.io" target="_blank">https://amourwaltz.github.io</a></p>
+            <p class="name"><a href="https://amourwaltz.github.io" target="_blank">薛博阳</a></p>
+            <p class="school">香港中文大学博士生</p>
           </div>
         </el-col>
         <el-col :span="4">
           <div class="grid-content bg-purple" style="margin-left: 5px">
             <img src="@/assets/image/hwy.png" width="100%" style="margin: 0 auto" />
-            <p>华文越</p>
-            <p>罗格斯大学博士生</p>
-            <p><a href="https://wenyueh.github.io/" target="_blank">https://wenyueh.github.io/</a></p>
+            <p class="name"><a href="https://wenyueh.github.io/" target="_blank">华文越</a></p>
+            <p class="school">罗格斯大学博士生</p>
           </div>
         </el-col>
       </el-row>       
@@ -70,8 +64,8 @@
         <el-col :span="4">
           <div class="grid-content bg-purple" style="margin-left: 5px">
             <img src="@/assets/image/hyl.png" width="100%" style="margin: 0 auto" />
-            <p>胡依璐</p>
-            <p>苏州大学硕士生</p>
+            <p class="name">胡依璐</p>
+            <p class="school">苏州大学硕士生</p>
           </div>
         </el-col>
       </el-row>

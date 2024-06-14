@@ -38,8 +38,8 @@
           <img src="@/assets/image/logo.png" width="100px" />
           <p style="width: 600px;">
             <span style="padding-left:2em;">
-            NICE（NLP Academic Exchange Platform）是一个专门面向中文NLP领域的青年学者学术交流平台，由众多高校一线科研同学共同创建。合作实验室苏州大学[OpenNLG实验室](
-            <a href="https://opennlg.cn/" target="_blank"><i class="el-icon-paperclip"></i>https://opennlg.cn/</a>)。</span><br>
+            NICE（NLP Academic Exchange Platform）是一个专门面向中文NLP领域的青年学者学术交流平台，由众多高校一线科研同学共同创建。合作实验室苏州大学
+            <a href="https://opennlg.cn/" target="_blank">OpenNLG实验室</a>。</span><br>
             <span style="padding-left:2em;">
             在ChatGPT时代下论文的idea日新月异，旨在做一个能够每周及时分享最新的、最有意义的前沿论文平台。希望能做到一个承上启下的作用，既能帮助学者分享自己的学术成果、跳出自己的圈子认识其他伙伴的同时，又能带动更年轻的未来学者顺利进入NLP的殿堂，一起促进国内NLP的蓬勃发展。</span>
           </p>

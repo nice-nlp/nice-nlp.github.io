@@ -105,19 +105,94 @@
     /* ---------------------------------------------- */
     WEA.Gallery = function() {
       $(document).ready(function () {
-        var example = $('[data-mrc]');
-        example.moreContent({
-            speed: 800,
-            height:1200,
-            shadow: true,
-            easing: 'easeOutBounce',
-            textClose: 'View More',
-            textOpen: 'Hide'
-        });
-        $('.method-controls button').on('click', function () {
-            var methName = $(this).data('meth');
-            example.moreContent(methName);
-        });
+        // var example = $('[data-mrc]');
+        // example.moreContent({
+        //     speed: 800,
+        //     height:1200,
+        //     shadow: true,
+        //     easing: 'easeOutBounce',
+        //     textClose: 'View More',
+        //     textOpen: 'Hide'
+        // });
+        // $('.method-controls button').on('click', function () {
+        //     var methName = $(this).data('meth');
+        //     example.moreContent(methName);
+        // });
+        var TagsData = []
+        TagsData.push({ id: 1, name: "非自回归", screen: "0" })
+        TagsData.push({ id: 2, name: "指令跟随", screen: "1" })
+        TagsData.push({ id: 3, name: "逻辑推理", screen: "2" })
+        TagsData.push({ id: 4, name: "思维链", screen: "3" })
+        TagsData.push({ id: 5, name: "代码实践", screen: "4" })
+        TagsData.push({ id: 6, name: "开源框架", screen: "5" })
+        TagsData.push({ id: 7, name: "高效解码", screen: "6" })
+        TagsData.push({ id: 8, name: "综述", screen: "7" })
+        TagsData.push({ id: 9, name: "指令压缩", screen: "8" })
+        TagsData.push({ id: 10, name: "位置编码", screen: "9" })
+        TagsData.push({ id: 11, name: "指令微调", screen: "10" })
+        TagsData.push({ id: 12, name: "专家系统", screen: "11" })
+        TagsData.push({ id: 13, name: "事实性", screen: "12" })
+        TagsData.push({ id: 14, name: "数学", screen: "13" })
+        TagsData.push({ id: 15, name: "游戏", screen: "14" })
+        TagsData.push({ id: 16, name: "评估", screen: "15" })
+        TagsData.push({ id: 17, name: "Agent", screen: "16" })
+        TagsData.push({ id: 18, name: "知识编辑", screen: "17" })
+        TagsData.push({ id: 19, name: "搜索", screen: "18" })
+        TagsData.push({ id: 20, name: "幻觉", screen: "19" })
+        TagsData.push({ id: 21, name: "物理", screen: "20" })
+        TagsData.push({ id: 22, name: "理解", screen: "21" })
+        TagsData.push({ id: 23, name: "对话", screen: "22" })
+        TagsData.push({ id: 24, name: "CoT", screen: "23" })
+        TagsData.push({ id: 25, name: "多语言", screen: "24" })
+        TagsData.push({ id: 26, name: "zero-shot", screen: "25" })
+        TagsData.push({ id: 27, name: "多模态", screen: "26" })
+        TagsData.push({ id: 28, name: "句法", screen: "27" })
+        TagsData.push({ id: 29, name: "对比学习", screen: "28" })
+        TagsData.push({ id: 30, name: "标注", screen: "29" })
+        TagsData.push({ id: 31, name: "信息抽取", screen: "30" })
+        TagsData.push({ id: 32, name: "code", screen: "31" })
+
+        $("#tagsInput").sTags({
+            data: TagsData,
+        })
+        $(".search").click(function () {
+            var temp = $('.sTags-input');
+            var tags = [];//输入的标签
+            temp.find('.sTags-new span').each(function() {
+            tags.push($(this).text());
+            });
+            
+            var divs = $("div.portfolio-box div.row");
+            divs.each(function () {
+                var $div = $(this);
+                var tagstemp = [];//每一个div的标签
+                $div.find('span').each(function() {
+                    tagstemp.push($(this).text());
+                });
+                
+                var found = false;//查找标记
+                if (tags.length === 0){//如果tags为空，显示全部div内容
+                    // found = true;
+                    location.reload();
+                    setTimeout(() => {
+                    location.hash = '#videosSection';
+                }, 0);
+                }else {
+                    for (var i = 0; i < tags.length; i++) {
+                        if (tagstemp.includes(tags[i])) {//遍历tags，查找是否和标签有匹配的
+                            found = true;
+                            break;
+                        }
+                    }
+                }
+
+                if (found) {
+                    $div.show();
+                } else {
+                    $div.hide();
+                }
+            });
+        })
     });
     }
 

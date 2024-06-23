@@ -270,7 +270,7 @@ button:hover {
 a {
   color: #FF651C;
   text-decoration: none; 
-  font-size: 30px;
+  /* font-size: 30px; */
   font-weight: 700;
   display: block;
   margin: 0 auto;
@@ -278,6 +278,12 @@ a {
   a:hover {
     color: #f24e00;
     text-decoration: none; }
+.load-more__btn {
+  font-size: 30px;
+}
+.hide__btn {
+  font-size: 30px;
+}
 .platform {
   text-decoration: none; 
   font-size: 22px;
@@ -586,10 +592,10 @@ main {
   margin-left: 50px;
   padding-bottom: 20px;
   width: 1100px;
-  height: 70px;
-  overflow-x: auto; 
+  /* height: 70px; */
+  /* overflow-x: auto; 
   overflow-y: hidden;
-  white-space: nowrap;
+  white-space: nowrap; */
 }
 @media (max-width: 767px){
   .tags {
@@ -599,14 +605,14 @@ main {
 }
 .tags span {
   display: inline-block;
-  padding: 8px 10px;
+  /* padding: 8px 10px; */
   color: #373737;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+  /* letter-spacing: 1px; */
   font-size: 12px;
   border-radius: 30px;
-  margin-right: 10px;
-  margin-top:10px;
+  font-weight: 600;
+  /* margin-right: 10px;
+  margin-top:10px; */
 }
 .portfolio-box .portfolio-img {
   position: relative;

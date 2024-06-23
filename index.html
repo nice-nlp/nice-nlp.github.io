@@ -15,6 +15,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo.png">
     <!-- theme css -->
     <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/jquery.sTags.css"><!--标签插件样式-->
 </head>
 <!-- Body Start -->
 
@@ -104,7 +105,7 @@
         </section>
         <!-- End Services Section -->
         <!-- Skill Section -->
-        <section data-scroll-index="2" class="section experience-section pb-0 bg-gray"  style="background-image: url(assets/img/effect/bg-effect-2.png); background-repeat: no-repeat; background-size: cover;">      
+        <section id="videosSection" data-scroll-index="2" class="section experience-section pb-0 bg-gray"  style="background-image: url(assets/img/effect/bg-effect-2.png); background-repeat: no-repeat; background-size: cover;">      
             <div class="container">
                 <div class="row section-heading justify-content-center">
                     <div class="col-lg-6 text-center">
@@ -112,46 +113,10 @@
                     </div>
                 </div>
                 <div class="tags ">
-                    <span style="background: rgba(232,29,29, 0.2);"><a href="#tag1" style="color: #373737; font-size: 12px;">非自回归</a></span>
-                    <span style="background: rgba(0,116,217, 0.2);"><a href="#tag2" style="color: #373737; font-size: 12px;">指令跟随</a></span>
-                    <span style="background: rgba(46,204,64, 0.2);"><a href="#tag3" style="color: #373737; font-size: 12px;">逻辑推理</a></span>
-                    <span style="background: rgba(255,133,27, 0.2);"><a href="#tag4" style="color: #373737; font-size: 12px;">思维链</a></span>
-                    <span style="background: rgba(177,13,201, 0.2);"><a href="#tag5" style="color: #373737; font-size: 12px;">代码实践</a></span>
-                    <span style="background: rgba(61,153,112, 0.2);"><a href="#tag6" style="color: #373737; font-size: 12px;">开源框架</a></span>
-                    <span style="background: rgba(255,65,54, 0.2);"><a href="#tag7" style="color: #373737; font-size: 12px;">高效解码</a></span>
-                    <span style="background: rgba(0,31,63, 0.2);"><a href="#tag8" style="color: #373737; font-size: 12px;">综述</a></span>
-                    <span style="background: rgba(133,20,75, 0.2);"><a href="#tag9" style="color: #373737; font-size: 12px;">指令压缩</a></span>
-                    <span style="background: rgba(57,204,204, 0.2);"><a href="#tag10" style="color: #373737; font-size: 12px;">位置编码</a></span>
-                    <span style="background: rgba(255,220,0, 0.2);"><a href="#tag11" style="color: #373737; font-size: 12px;">指令微调</a></span>
-                    <span style="background: rgba(17,17,17, 0.2);"><a href="#tag12" style="color: #373737; font-size: 12px;">专家系统</a></span>
-                    <span style="background: rgba(170,170,170, 0.2);"><a href="#tag13" style="color: #373737; font-size: 12px;">事实性</a></span>
-                    <span style="background: rgba(102,51,153, 0.2);"><a href="#tag14" style="color: #373737; font-size: 12px;">数学</a></span>
-                    <span style="background: rgba(65,105,225, 0.2);"><a href="#tag15" style="color: #373737; font-size: 12px;">游戏</a></span>
-                    <span style="background: rgba(139,0,139, 0.2);"><a href="#tag16" style="color: #373737; font-size: 12px;">评估</a></span>
-                    <span style="background: rgba(34,139,34, 0.2);"><a href="#tag17" style="color: #373737; font-size: 12px;text-transform: none;">Agent</a></span>
-                    <span style="background: rgba(240,18,190, 0.2);"><a href="#tag18" style="color: #373737; font-size: 12px;">知识编辑</a></span>
-                    <span style="background: rgba(160,82,45, 0.2);"><a href="#tag19" style="color: #373737; font-size: 12px;">搜索</a></span>
-                    <span style="background: rgba(127,255,212, 0.2);"><a href="#tag20" style="color: #373737; font-size: 12px;">幻觉</a></span>
-                    <span style="background: rgba(210,105,30, 0.2);"><a href="#tag21" style="color: #373737; font-size: 12px;">物理</a></span>
-                    <span style="background: rgba(85,107,47, 0.2);"><a href="#tag22" style="color: #373737; font-size: 12px;">理解</a></span>
-                    <span style="background: rgba(153,50,204, 0.2);"><a href="#tag23" style="color: #373737; font-size: 12px;">对话</a></span>
-                    <span style="background: rgba(128,128,0, 0.2);"><a href="#tag24" style="color: #373737; font-size: 12px; text-transform: none;">CoT</a></span>
-                    <span style="background: rgba(0,128,128, 0.2);"><a href="#tag25" style="color: #373737; font-size: 12px;">多语言</a></span>
-                    <span style="background: rgba(70,130,180, 0.2);"><a href="#tag26" style="color: #373737; font-size: 12px;text-transform: none;">zero-shot</a></span>
-                    <span style="background: rgba(0,139,139, 0.2);"><a href="#tag27" style="color: #373737; font-size: 12px;">多模态</a></span>
-                    <span style="background: rgba(106,90,205, 0.2);"><a href="#tag28" style="color: #373737; font-size: 12px;">句法</a></span>
-                    <span style="background: rgba(255,105,180, 0.2);"><a href="#tag29" style="color: #373737; font-size: 12px;">对比学习</a></span>
-                    <span style="background: rgba(205,92,92, 0.2);"><a href="#tag30" style="color: #373737; font-size: 12px;">标注</a></span>
-                    <span style="background: rgba(173,255,47, 0.2);"><a href="#tag31" style="color: #373737; font-size: 12px;">信息抽取</a></span>
-                    <span style="background: rgba(72,209,204, 0.2);"><a href="#tag32" style="color: #373737; font-size: 12px;text-transform: none;">code</a></span>
+                    <input type="text" id="tagsInput" style="background-color: transparent; width: 500px;border:1px solid rgb(85,85,85)">
+                    <button class="px-btn px-btn-theme search" >搜索</button>
                 </div>
-                <!-- <div class="but_left" style="width: 30px;position: absolute;top: 200px;left:20px;"><img class="leftpic" src="images/qianxleft.png" height="35px"></div>
-                <div class="but_right" style="width: 30px;position: absolute;top: 200px;right:20px"><img src="images/qianxr.png" height="35px"></div> -->
-                <!-- <div>
-                    <div class="but_left"><img src="images/qianxleft.png" height="35px"/></div>
-                    <div class="but_right"><img src="images/qianxr.png" height="35px /></div>
-                </div> -->
-                <div class="lightbox-gallery portfolio-box" data-mrc>`
+                <div class="lightbox-gallery portfolio-box some-list" >
                     <div class="row gx-3 pb-3 mb-5 pb-lg-3 mb-lg-3 gy-4 portfolio-box justify-content-around align-items-center ">
                         <div class="col-md-6 col-lg-5">
                             <div class="portfolio-img">
@@ -1066,7 +1031,26 @@
     <script src="assets/vendor/load-more/jquery.simpleLoadMore.js"></script>  
     <script src="assets/vendor/load-more/jquery.easing.min.js"></script>
     <script src="assets/vendor/load-more/jquery.morecontent.js"></script>
+    <script src="assets/vendor/tags/jquery.sTags.js"></script>
     <!-- end -->
+    <script>
+        $('.some-list').simpleLoadMore({
+	      item: 'div.row',
+	      count: 6,
+          onAllLoaded: function ($loadMore) {
+                var hideBtn = $('<a href="#" class="hide__btn">Hide</a>');
+                $loadMore.append(hideBtn);
+
+                hideBtn.on('click', function (e) {
+                    e.preventDefault();
+                    location.reload();
+                    setTimeout(() => {
+        location.hash = '#videosSection';
+    }, 0);
+                });
+            }
+	    });
+    </script>
 </body>
 <!-- Body End -->
 

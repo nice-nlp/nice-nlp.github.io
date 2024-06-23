@@ -1,7 +1,7 @@
 ;(function($) {
 
 	/**
-	 * Настройки по умолчанию
+	 * 默认设置
 	 *
 	 * @default
 	 */
@@ -14,7 +14,7 @@
 		event: 'click',
 		shadow: false,
 		easing: 'swing',
-		textClose: 'Читать полностью',
+		textClose: '阅读全文',
 		textOpen: 'Свернуть',
 		tpl: {
 			content: '<div class="mrc-content"></div>',
@@ -28,7 +28,7 @@
 	};
 
 	/**
-	 * Конструктор
+	 * css
 	 *
 	 * @constructor
 	 * @param {HTMLElement} el - HTML-элемент в DOM

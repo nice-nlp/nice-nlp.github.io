@@ -151,6 +151,7 @@
         TagsData.push({ id: 30, name: "标注", screen: "29" })
         TagsData.push({ id: 31, name: "信息抽取", screen: "30" })
         TagsData.push({ id: 32, name: "code", screen: "31" })
+        TagsData.push({ id: 33, name: "推理", screen: "32" })
 
         $("#tagsInput").sTags({
             data: TagsData,

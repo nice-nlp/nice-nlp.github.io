@@ -343,6 +343,4 @@
   // Window on Resize
   $(window).on("resize", function(){
   });
-
-
 })(jQuery);

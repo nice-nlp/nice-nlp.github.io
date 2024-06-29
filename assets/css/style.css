@@ -133,7 +133,6 @@ bootstrapģ��⣺http://www.bootstrapmb.com
           left: 0;
           right: auto;
           width: 100%; }
-
 @media (max-width: 991px) {
   .main-header .navbar-toggler {
     display: -ms-flexbox;
@@ -158,6 +157,11 @@ bootstrapģ��⣺http://www.bootstrapmb.com
     background: #fff;
     right: 0px; } }
 
+.thin-times {
+  font-weight: 400;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
 .footer {
   background-color: #373737;
   padding-top: 10px;

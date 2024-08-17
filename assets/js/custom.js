@@ -153,6 +153,10 @@
         TagsData.push({ id: 32, name: "code", screen: "31" })
         TagsData.push({ id: 33, name: "推理", screen: "32" })
         TagsData.push({ id: 34, name: "ai4science", screen: "33" })
+        TagsData.push({ id: 35, name: "知识冲突", screen: "34" })
+        TagsData.push({ id: 36, name: "推理加速", screen: "35" })
+        TagsData.push({ id: 37, name: "安全", screen: "36" })
+        TagsData.push({ id: 38, name: "越狱", screen: "37" })
 
         $("#tagsInput").sTags({
             data: TagsData,

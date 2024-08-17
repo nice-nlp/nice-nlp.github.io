@@ -157,6 +157,7 @@
         TagsData.push({ id: 36, name: "推理加速", screen: "35" })
         TagsData.push({ id: 37, name: "安全", screen: "36" })
         TagsData.push({ id: 38, name: "越狱", screen: "37" })
+        TagsData.push({ id: 39, name: "模型加速", screen: "38" })
 
         $("#tagsInput").sTags({
             data: TagsData,

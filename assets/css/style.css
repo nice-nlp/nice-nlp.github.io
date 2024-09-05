@@ -741,6 +741,8 @@ main {
     display: flex;
     position: relative;
   }
+  .contact-infos li:first-child {
+    margin-left: 50px; }
     .contact-infos li:last-child {
       margin-right: 0; }
   .contact-infos .icon {
@@ -756,7 +758,7 @@ main {
     font-size: 25px; }
   .contact-infos .col {
     padding-left: 15px; 
-  width: 250px;}
+  width: 220px;}
   .contact-infos h5 {
     font-size: 14px;
     margin: 0 0 5px;

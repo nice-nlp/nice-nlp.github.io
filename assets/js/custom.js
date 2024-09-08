@@ -273,7 +273,7 @@
                 speed: 200,
                 loop:true,
                 strings: [
-                  'NICE',
+                  'NICE go!',
 
                 ],
                 breakLines: false

@@ -160,6 +160,9 @@
         TagsData.push({ id: 39, name: "模型加速", screen: "38" })
         TagsData.push({ id: 40, name: "math", screen: "39" })
         TagsData.push({ id: 41, name: "RAG", screen: "40" })
+        TagsData.push({ id: 42, name: "上下文学习", screen: "41"})
+        TagsData.push({ id: 43, name: "可解释性", screen: "42"})
+
 
         $("#tagsInput").sTags({
             data: TagsData,

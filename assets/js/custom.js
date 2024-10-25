@@ -162,6 +162,7 @@
         TagsData.push({ id: 41, name: "RAG", screen: "40" })
         TagsData.push({ id: 42, name: "上下文学习", screen: "41"})
         TagsData.push({ id: 43, name: "可解释性", screen: "42"})
+        TagsData.push({ id: 44, name: "对齐", screen: "43"})
 
 
         $("#tagsInput").sTags({

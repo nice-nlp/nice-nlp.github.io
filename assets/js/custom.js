@@ -163,6 +163,9 @@
         TagsData.push({ id: 42, name: "上下文学习", screen: "41"})
         TagsData.push({ id: 43, name: "可解释性", screen: "42"})
         TagsData.push({ id: 44, name: "对齐", screen: "43"})
+        TagsData.push({ id: 45, name: "数据标注", screen: "44"})
+        TagsData.push({ id: 46, name: "NER", screen: "45"})
+        TagsData.push({ id: 47, name: "模型微调", screen: "46"})
 
 
         $("#tagsInput").sTags({

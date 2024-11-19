@@ -166,7 +166,7 @@
         TagsData.push({ id: 45, name: "数据标注", screen: "44"})
         TagsData.push({ id: 46, name: "NER", screen: "45"})
         TagsData.push({ id: 47, name: "模型微调", screen: "46"})
-
+        TagsData.push({ id: 48, name: "模型编辑", screen: "47"})
 
         $("#tagsInput").sTags({
             data: TagsData,

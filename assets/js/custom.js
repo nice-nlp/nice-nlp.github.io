@@ -167,6 +167,10 @@
         TagsData.push({ id: 46, name: "NER", screen: "45"})
         TagsData.push({ id: 47, name: "模型微调", screen: "46"})
         TagsData.push({ id: 48, name: "模型编辑", screen: "47"})
+        TagsData.push({ id: 49, name: "信息检索", screen: "48"})
+        TagsData.push({ id: 50, name: "数据合成", screen: "49"})
+        TagsData.push({ id: 51, name: "数据增强", screen: "50"})
+
 
         $("#tagsInput").sTags({
             data: TagsData,

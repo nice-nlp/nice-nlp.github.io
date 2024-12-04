@@ -670,8 +670,9 @@ main {
       margin-bottom: 10px; } }
 
 .portfolio-box .portfolio-text a {
-  color: inherit;
+  color: #373737;
   text-decoration: none;
+  text-align: left;
   display: inline;
 }
 .portfolio-box .portfolio-text a:hover {

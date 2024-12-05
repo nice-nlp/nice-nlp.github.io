@@ -649,6 +649,9 @@ main {
 
 /* .portfolio-box .portfolio-text h6 {
   margin-bottom: 18px; } */
+  .portfolio-text {
+    display: flex;
+  }
   .portfolio-box .portfolio-text h4 span {
     display: inline-block;
     padding: 8px 10px;
@@ -660,6 +663,7 @@ main {
     border-radius: 30px; }
 
 .portfolio-box .portfolio-text h4 {
+  display: inline;
   color: #373737;
   font-weight: 600;
   font-size: 32px;
@@ -676,7 +680,7 @@ main {
   display: inline;
 }
 .portfolio-box .portfolio-text a:hover {
-  color: #f24e00;
+  color: #f24e00;  
 }
 .portfolio-box .portfolio-text .btn-bar {
   padding-top: 10px; }

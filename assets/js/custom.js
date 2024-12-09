@@ -170,6 +170,7 @@
         TagsData.push({ id: 49, name: "信息检索", screen: "48"})
         TagsData.push({ id: 50, name: "数据合成", screen: "49"})
         TagsData.push({ id: 51, name: "数据增强", screen: "50"})
+        TagsData.push({ id: 52, name: "科研之路", screen: "51"})
 
 
         $("#tagsInput").sTags({

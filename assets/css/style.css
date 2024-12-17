@@ -510,6 +510,21 @@ main {
   font-weight: 500;
   color: #373737; }
 
+.about-sponsor {
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+}
+
+.sponsor-img:hover {
+  box-shadow: 3px 3px 0 0 #e0b8b8;
+}
+.sponsor-text {
+  font-family: "Arial", sans-serif; 
+  font-size: 26px;                 
+  font-weight: bold;             
+  color: rgb(206, 50, 52);                  
+}
 /* feature 
 ---------------------*/
 .feature-box-01 {

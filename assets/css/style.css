@@ -487,7 +487,9 @@ main {
         font-size: 18px; } }
   .home-section .home-intro .btn-bar {
     padding-top: 10px; }
-
+.home-image:hover{
+  box-shadow: 3px 3px 0 0 #373737;
+}
 /* About
 ---------------------*/
 .about-text h4 {

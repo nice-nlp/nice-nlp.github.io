@@ -413,7 +413,7 @@ main {
 /* Section
 ---------------------*/
 .section {
-  padding: 100px 0;
+  padding: 100px 0 100px 0;
   position: relative; }
   @media (max-width: 991px) {
     .section {
@@ -527,7 +527,8 @@ main {
   font-size: 26px; 
   font-style: italic;                
   font-weight: bold;             
-  color: rgb(206, 50, 52);                  
+  color: rgb(206, 50, 52);    
+  margin-right:20px;              
 }
 /* feature 
 ---------------------*/
@@ -639,10 +640,19 @@ main {
 }
 .portfolio-box .portfolio-img {
   position: relative;
-  border: 2px solid #373737;
+  border: 0px solid #373737;
   box-shadow: 0 0 0 0 #373737;
   transition: ease all 0.35s;
-  position: relative; }
+  display: flex;           /* 启用 flex 布局 */
+  flex-direction: column;  /* 让子元素垂直排列 */
+  align-items: center;     /* 水平居中 */
+  justify-content: center; /* 垂直居中（可选，如果父容器有固定高度） */
+  text-align: center;  }
+  .portfolio-box .portfolio-img h4 {
+    color: #373737;
+    letter-spacing: 4px;
+    font-weight: 600;
+  }
   .portfolio-box .portfolio-img .gallery-link-icon {
     width: 40px;
     height: 40px;
@@ -660,11 +670,11 @@ main {
     left: 0;
     transition: ease all 0.35s;
     opacity: 0; }
-  .portfolio-box .portfolio-img:hover {
-    box-shadow: 3px 3px 0 0 #373737; }
-    .portfolio-box .portfolio-img:hover .gallery-link-icon {
+  /* .portfolio-box .portfolio-img:hover {
+    box-shadow: 3px 3px 0 0 #373737; } */
+    /* .portfolio-box .portfolio-img:hover .gallery-link-icon {
       left: 15px;
-      opacity: 1; }
+      opacity: 1; } */
 
 /* .portfolio-box .portfolio-text h6 {
   margin-bottom: 18px; } */

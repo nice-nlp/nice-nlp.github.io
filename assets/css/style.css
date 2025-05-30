@@ -784,7 +784,7 @@ h3 span {
     max-width: calc(100% - 100px); */
     -ms-flex: 0 0 calc(90%);
     flex: 0 0 calc(90%);
-    max-width: calc(90%);
+    /* max-width: calc(90%); */
     text-align: center;
     padding-top: 20px; 
     position: relative; }

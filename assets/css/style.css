@@ -243,7 +243,15 @@ bootstrapģ��⣺http://www.bootstrapmb.com
 
 @media (prefers-reduced-motion: no-preference) {
   :root {
-    scroll-behavior: inherit; } }
+    scroll-behavior: inherit; }
+
+  .hover-effect, .feature-box-03 {
+      transition: transform 0.3s ease;
+  }
+  .hover-effect:hover, .feature-box-03:hover {
+    transform: translateY(-1px) scale(1.01);
+  }
+}
 
 body {
   font-family: "Jost", sans-serif;
@@ -531,6 +539,15 @@ main {
   color: rgb(206, 50, 52);    
   margin-right:20px;       
 }
+
+/* Introduction text wrap */
+h3 span {
+  display: inline;
+  white-space: normal;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
 /* feature 
 ---------------------*/
 .feature-box-01 {
@@ -728,8 +745,11 @@ main {
   transition: ease all 0.35s;
   padding: 35px;
   width: 22%;
-  margin-left: 30px;
+  margin: 15px;
   margin-bottom: 35px;
+  margin-right:auto;
+  /* margin-left: 30px;
+  margin-bottom: 35px; */
   /* display: -ms-flexbox;
   display: flex;  */
   display: inline-block;
@@ -782,6 +802,7 @@ main {
   padding: 0;
   display: flex;
   list-style: none; 
+  justify-content: center;
 }
   .contact-infos li {
     /* display: -ms-flexbox; */
@@ -818,6 +839,7 @@ main {
     font-size: 20px;
     color: #fff;
     font-weight: 500; }
+
     @media (max-width: 767px) {
       /* .contact-infos .icon {
         width: 30px;
@@ -835,6 +857,34 @@ main {
       .contact-infos h5 {
         margin-left: 5px;
       }
+    }
+  
+    @media (max-width: 473px) {
+      .contact-infos{
+        max-width: 80%;
+        /* padding-left:15vw; */
+      }
+      .contact-infos .icon {
+        width: 16vw;
+        height: 16vw;
+      }
+      .contact-infos h5 {
+        font-size: 10px;
+        /* max-width: 16vw; */
+      }
+      .contact-infos p {
+        font-size: 12px;
+        /* max-width: 16vw; */
+        /* max-width: 20vw; */
+        margin-left: 2vw; }
+      .contact-infos .col {
+        padding-left: 1px;
+        width: 30vw;}
+      .contact-infos h5 {
+        margin-left: 2vw;
+      }
+      .shrink {
+        max-width: 16vw;}
     }
        
 

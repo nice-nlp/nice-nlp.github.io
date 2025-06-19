@@ -443,7 +443,8 @@ document.addEventListener('DOMContentLoaded', function() {
     };
 
     // Get all filter elements
-    const filterButtons = document.querySelectorAll('[data-committee]');
+    // const filterButtons = document.querySelectorAll('[data-committee]');
+    const filterButtons = document.querySelectorAll('#committees-tab button')
     const allButton = document.getElementById('all-tab');
     const dropdown = document.getElementById('committee-dropdown');
     const membersGrid = document.getElementById('members-grid');

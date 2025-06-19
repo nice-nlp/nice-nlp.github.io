@@ -497,7 +497,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Add event listeners to filter buttons
     filterButtons.forEach(button => {
-        button.addEventListener('click', function() {
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
             const committee = this.dataset.committee;
             
             // If clicking the currently active committee button
@@ -527,7 +529,9 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Add event listener to dropdown
-    dropdown.addEventListener('change', function() {
+    dropdown.addEventListener('change', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
         const committee = this.value;
         
         // If selecting the currently active committee

@@ -434,12 +434,13 @@ document.addEventListener('DOMContentLoaded', function() {
     // Committee data (name and description)
     const committees = {
         'agent': { name: 'Agent Committee', description: 'Agent Committee Description' },
-        'efficient': { name: 'Efficient/Infra Committee', description: 'Efficient/Infra Committee' },
+        'efficient/infra': { name: 'Efficient/Infra Committee', description: 'Efficient/Infra Committee' },
         'evaluation': { name: 'Evaluation Committee', description: 'Evaluation Committee' },
         'interp': { name: 'Interpretation Committee', description: 'Interpretation Committee' },
-        'multilingual': { name: 'Multilingual Committee', description: 'Multilingual Committee' },
+        'human-centered nlp': { name: 'Human-centered NLP Committee', description: 'Human-centered NLP Committee' },
         'multimodal': { name: 'Multimodal Committee', description: 'Multimodal Committee' },
-        'trustworthy': { name: 'Trustworthiness Committee', description: 'Trustworthiness Committee' }
+        'reliability': { name: 'Reliability Committee', description: 'Reliability Committee' },
+        'reasoning': { name: 'Reasoning Committee', description: 'Reasoning Committee' }
     };
 
     // Get all filter elements

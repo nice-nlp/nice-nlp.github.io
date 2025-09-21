@@ -1628,7 +1628,7 @@
                 <button class="px-btn px-btn-theme" id="agent-tab" data-committee="agent" type="button" role="tab">Agent</button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="px-btn px-btn-theme" id="efficient-tab" data-committee="efficient" type="button" role="tab">Efficient/Infra</button>
+                <button class="px-btn px-btn-theme" id="efficient-tab" data-committee="efficient/infra" type="button" role="tab">Efficient/Infra</button>
             </li>
             <li class="nav-item" role="presentation">
                 <button class="px-btn px-btn-theme" id="evaluation-tab" data-committee="evaluation" type="button" role="tab">Evaluation</button>
@@ -1637,13 +1637,16 @@
                 <button class="px-btn px-btn-theme" id="interp-tab" data-committee="interp" type="button" role="tab">Interp</button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="px-btn px-btn-theme" id="multilingual-tab" data-committee="multilingual" type="button" role="tab">Multilingual</button>
+                <button class="px-btn px-btn-theme" id="multilingual-tab" data-committee="human-centered nlp" type="button" role="tab">Human-centered NLP</button>
             </li>
             <li class="nav-item" role="presentation">
                 <button class="px-btn px-btn-theme" id="multimodal-tab" data-committee="multimodal" type="button" role="tab">Multimodal</button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="px-btn px-btn-theme" id="trustworthy-tab" data-committee="trustworthy" type="button" role="tab">Trustworthiness</button>
+                <button class="px-btn px-btn-theme" id="reliability-tab" data-committee="reliability" type="button" role="tab">Reliability</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="px-btn px-btn-theme" id="reasoning-tab" data-committee="reasoning" type="button" role="tab">Reasoning</button>
             </li>
         </ul>
 
@@ -1651,12 +1654,13 @@
             <select class="px-btn px-btn-theme mobile-dropdown" id="committee-dropdown">
                 <option value="all" selected>All</option>
                 <option value="agent">Agent</option>
-                <option value="efficient">Efficient/Infra</option>
+                <option value="efficient/infra">Efficient/Infra</option>
                 <option value="evaluation">Evaluation</option>
                 <option value="interp">Interp</option>
-                <option value="multilingual">Multilingual</option>
+                <option value="human-centered nlp">Human-centered NLP</option>
                 <option value="multimodal">Multimodal</option>
-                <option value="trustworthy">Trustworthiness</option>
+                <option value="reliability">Reliability</option>
+                <option value="reasoning">Reasoning</option>
             </select>
         </div>
 
@@ -1680,188 +1684,8 @@
             </div>
 
             <!-- Members Grid -->
-            <div class="row members-grid justify-content-start mx-auto">
+            <div class="row members-grid justify-content-start mx-auto" id="members-container">
                 <!-- Example member card (add data-committee attribute to each) -->
-                <div class="col-xl-3 col-lg-4 col-md-6 member-card" data-committee="interp" onclick="window.open('https://scholar.google.com/citations?hl=zh-CN&user=P3bp0egAAAAJ&view_op=list_works&sortby=pubdate')">
-                    <div class="d-flex flex-column justify-content-center">
-                        <div class="member-img">
-                                <img src="assets/img/members/wmr.png">
-                        </div>
-                        <div class="member-info text-center">
-                            <h6 class="member-name">王梦如</h6>
-                                <span>浙江大学博士生</span>
-                        </div>
-                            <div class="icons">
-                                <i class="fas fa-quote-left"></i>
-                            </div>
-                    </div>
-                </div>
-                
-                <!-- <div class="col-xl-3 col-lg-4 col-md-6 member-card" data-committee="interp" onclick="window.open('https://scholar.google.com/citations?hl=zh-CN&user=P3bp0egAAAAJ&view_op=list_works&sortby=pubdate')">
-                    <div class="d-flex justify-content-center flex-column">
-                        <div class="member-img">
-                                <img src="assets/img/members/jmy.png">
-                        </div>
-                                <div class="member-info text-center">
-                            <div class="icons">
-                                <i class="fas fa-quote-left"></i>
-                            </div>
-                            <h6 class="member-name">金明宇</h6>
-                                <span>罗格斯大学博士生</span>
-                        </div>
-                    </div>
-                </div> -->
-
-                <div class="col-xl-3 col-lg-4 col-md-6 member-card" data-committee="evaluation" onclick="window.open('https://zhangqiyuan-rico.github.io/')">
-                    <div class="d-flex justify-content-center flex-column">
-                        <div class="member-img">
-                        <img src="assets/img/members/zqy.png">
-                        </div>
-                        <div class="member-info text-center">
-                            <div class="icons">
-                                <i class="fas fa-quote-left"></i>
-                            </div>
-                            <h6 class="member-name">张启源</h6>
-                                <span>香港城市大学博士生</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xl-3 col-lg-4 col-md-6 member-card" data-committee="multimodal" onclick="window.open('https://jyrao.github.io')">
-                    <div class="d-flex justify-content-center flex-column">
-                        <div class="member-img">   
-                            <img src="assets/img/members/rjy.png">
-                        </div>     
-                        <div class="member-info text-center">
-                            <div class="icons">
-                                <i class="fas fa-quote-left"></i>
-                            </div>
-                            <h6 class="member-name">饶珈源</h6>
-                                <span>上交&上海AI Lab博士生</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xl-3 col-lg-4 col-md-6 member-card" data-committee="multimodal" onclick="window.open('https://eurekaleo.github.io/')">
-                    <div class="d-flex justify-content-center flex-column">
-                        <div class="member-img">          
-                        <img src="assets/img/members/lm.png">
-                        </div>
-                        <div class="member-info text-center">
-                            <div class="icons">
-                                <i class="fas fa-quote-left"></i>
-                            </div>
-                            <h6 class="member-name">罗盟</h6>
-                                <span>新加坡国立大学博士生</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xl-3 col-lg-4 col-md-6 member-card" data-committee="trustworthy" onclick="window.open('https://amourwaltz.github.io')">
-                    <div class="d-flex justify-content-center flex-column">
-                        <div class="member-img">       
-                        <img src="assets/img/members/xby.png">
-                        </div> 
-                        <div class="member-info text-center">
-                            <div class="icons">
-                                <i class="fas fa-quote-left"></i>
-                            </div>
-                            <h6 class="member-name">薛博阳</h6>
-                                <span>香港中文大学博士生</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xl-3 col-lg-4 col-md-6 member-card" data-committee="efficient" onclick="window.open('https://hemingkx.github.io/')">
-                    <div class="d-flex justify-content-center flex-column">
-                        <div class="member-img">  
-                        <img src="assets/img/members/xhm.png">
-                        </div>      
-                        <div class="member-info text-center">
-                            <div class="icons">
-                                <i class="fas fa-quote-left"></i>
-                            </div>
-                            <h6 class="member-name">夏鹤明</h6>
-                                <span>香港理工大学博士生</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- <div class="col-xl-3 col-lg-4 col-md-6 member-card" data-committee="agent">
-                    <div class="d-flex justify-content-center flex-column">
-                        <div class="member-img">         
-                        <img src="assets/img/members/hwy.png">
-                        </div>
-                        <div class="member-info text-center">
-                            <div class="icons">
-                                <i class="fas fa-quote-left"></i>
-                            </div>
-                            <h6 class="member-name">华文越</h6>
-                                <span>UCSB博后</span>
-                        </div>
-                    </div>
-                </div> -->
-
-                <!-- <div class="col-xl-3 col-lg-4 col-md-6 member-card" data-committee="interp">
-                    <div class="d-flex justify-content-center flex-column">
-                        <div class="member-img">            
-                        <img src="assets/img/members/lhz.png">
-                        </div>
-                        <div class="member-info text-center">
-                            <div class="icons">
-                                <i class="fas fa-quote-left"></i>
-                            </div>
-                            <h6 class="member-name">刘鸿樟</h6>
-                                <span>悉尼大学</span>
-                        </div>
-                    </div>
-                </div> -->
-
-                <!-- <div class="col-xl-3 col-lg-4 col-md-6 member-card" data-committee="multilingual" onclick="window.open('https://ercong21.github.io/')">
-                    <div class="d-flex justify-content-center flex-column">
-                        <div class="member-img">            
-                        <img src="assets/img/members/nec.png">
-                        </div>
-                        <div class="member-info text-center">
-                            <div class="icons">
-                                <i class="fas fa-quote-left"></i>
-                            </div>
-                            <h6 class="member-name">聂耳聪</h6>
-                                <span>慕尼黑大学博士生</span>
-                        </div>
-                    </div>
-                </div> -->
-
-                <!-- <div class="col-xl-3 col-lg-4 col-md-6 member-card" data-committee="multilingual" onclick="window.open('https://mingyang-wang26.github.io/')">
-                    <div class="d-flex justify-content-center flex-column">
-                        <div class="member-img">            
-                        <img src="assets/img/members/wmy.png">
-                        </div>
-                        <div class="member-info text-center">
-                            <div class="icons">
-                                <i class="fas fa-quote-left"></i>
-                            </div>
-                            <h6 class="member-name">王铭阳</h6>
-                                <span>慕尼黑大学博士生</span>
-                        </div>
-                    </div>
-                </div> -->
-
-                <div class="col-xl-3 col-lg-4 col-md-6 member-card" data-committee="multilingual" onclick="window.open('https://owennju.github.io/')">
-                    <div class="d-flex justify-content-center flex-column">
-                        <div class="member-img">            
-                        <img src="assets/img/members/zww.png">
-                        </div>
-                        <div class="member-info text-center">
-                            <div class="icons">
-                                <i class="fas fa-quote-left"></i>
-                            </div>
-                            <h6 class="member-name">朱文昊</h6>
-                                <!-- <span>南京大学博士生</span> -->
-                                <span>字节跳动研究员</span>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
@@ -2128,355 +1952,8 @@
                             </div>
                     </div>
                 </div>
-</section>
+        </section>
 
-
-
-
-        <!-- Work Section -->
-        <!-- <section data-scroll-index="3" class="section work-section">
-            <div class="container">
-                <div class="row section-heading justify-content-center">
-                    <div class="col-lg-6 text-center">
-                        <h3><span>committees</span></h3>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="feature-box-03">
-                        <div class="feature-img">
-                            <img src="assets/img/members/zrr.png">
-                        </div>
-                        <div class="feature-content">
-                            <div class="icons">
-                                <i class="fas fa-quote-left"></i>
-                            </div>
-                            <h6>甄冉冉</h6>
-                            <span>苏州大学博士生</span>
-                        </div>
-                    </div>
-                    <div class="feature-box-03" onclick="window.open('https://izhx.github.io')" >
-                        <div class="feature-img">
-                            <img src="assets/img/members/zx.png">
-                        </div>
-                        <div class="feature-content">
-                            <div class="icons">
-                                <i class="fas fa-quote-left"></i>
-                            </div>
-                            <h6>张鑫</h6>
-                            <span>哈尔滨工业大学(深圳)博士生</span>
-                        </div>
-                    </div>
-                    <div class="feature-box-03" onclick="window.open('http://hillzhang1999.github.io')">
-                        <div class="feature-img">
-                            <img src="assets/img/members/zy.png">
-                        </div>
-                        <div class="feature-content">
-                            <div class="icons">
-                                <i class="fas fa-quote-left"></i>
-                            </div>
-                            <h6>章岳</h6>
-                            <span>字节跳动研究员</span>
-                        </div>
-                    </div>
-                    <div class="feature-box-03" onclick="window.open('https://scholar.google.com/citations?user=xTM9pKsAAAAJ&hl=en&oi=sra')">
-                        <div class="feature-img">
-                            <img src="assets/img/members/lyh.png">
-                        </div>
-                        <div class="feature-content">
-                            <div class="icons">
-                                <i class="fas fa-quote-left"></i>
-                            </div>
-                            <h6>李映辉</h6>
-                            <span>清华大学博士生</span>
-                        </div>
-                    </div>
-                    <div class="feature-box-03" onclick="window.open('https://ruleGreen.github.io')">
-                        <div class="feature-img">
-                            <img src="assets/img/members/whr.png">
-                        </div>
-                        <div class="feature-content">
-                            <div class="icons">
-                                <i class="fas fa-quote-left"></i>
-                            </div>
-                            <h6>王鸿儒</h6>
-                            <span>香港中文大学博士生</span>
-                        </div>
-                    </div>
-                    <div class="feature-box-03" onclick="window.open('https://amourwaltz.github.io')">
-                        <div class="feature-img">
-                            <img src="assets/img/members/xby.png">
-                        </div>
-                        <div class="feature-content">
-                            <div class="icons">
-                                <i class="fas fa-quote-left"></i>
-                            </div>
-                            <h6>薛博阳</h6>
-                            <span>香港中文大学博士生</span>
-                        </div>
-                    </div>
-                    <div class="feature-box-03" onclick="window.open('https://wenyueh.github.io')">
-                        <div class="feature-img">
-                            <img src="assets/img/members/hwy.png">
-                        </div>
-                        <div class="feature-content">
-                            <div class="icons">
-                                <i class="fas fa-quote-left"></i>
-                            </div>
-                            <h6>华文越</h6>
-                            <span>UCSB 博士后</span>
-                        </div>
-                    </div>
-                    <div class="feature-box-03" onclick="window.open('https://wangcunxiang.github.io/')">
-                        <div class="feature-img">
-                            <img src="assets/img/members/wcx.png">
-                        </div>
-                        <div class="feature-content">
-                            <div class="icons">
-                                <i class="fas fa-quote-left"></i>
-                            </div>
-                            <h6>王存翔</h6>
-                            <span>清华大学博士后 智谱研究员</span>
-                        </div>
-                    </div>
-                    <div class="feature-box-03" onclick="window.open('https://ercong21.github.io/')">
-                        <div class="feature-img">
-                            <img src="assets/img/members/nec.png">
-                        </div>
-                        <div class="feature-content">
-                            <div class="icons">
-                                <i class="fas fa-quote-left"></i>
-                            </div>
-                            <h6>聂耳聪</h6>
-                            <span>慕尼黑大学博士生</span>
-                        </div>
-                    </div>
-                    <div class="feature-box-03" onclick="window.open('https://lilei-nlp.github.io/')">
-                        <div class="feature-img">
-                            <img src="assets/img/members/ll.png">
-                        </div>
-                        <div class="feature-content">
-                            <div class="icons">
-                                <i class="fas fa-quote-left"></i>
-                            </div>
-                            <h6>李磊</h6>
-                            <span>香港大学博士生</span>
-                        </div>
-                    </div>
-                    <div class="feature-box-03" onclick="window.open('https://jyrao.github.io')">
-                        <div class="feature-img">
-                            <img src="assets/img/members/rjy.png">
-                        </div>
-                        <div class="feature-content">
-                            <div class="icons">
-                                <i class="fas fa-quote-left"></i>
-                            </div>
-                            <h6>饶珈源</h6>
-                            <span>上交&上海AI Lab博士生</span>
-                        </div>
-                    </div>
-                    <div class="feature-box-03" onclick="window.open('https://dongdongzhaoup.github.io')">
-                        <div class="feature-img">
-                            <img src="assets/img/members/zhd.png">
-                        </div>
-                        <div class="feature-content">
-                            <div class="icons">
-                                <i class="fas fa-quote-left"></i>
-                            </div>
-                            <h6>赵皓东</h6>
-                            <span>上海交通大学博士生</span>
-                        </div>
-                    </div>
-                    <div class="feature-box-03" onclick="window.open('https://scholar.google.com/citations?hl=zh-CN&user=P3bp0egAAAAJ&view_op=list_works&sortby=pubdate')">
-                        <div class="feature-img">
-                            <img src="assets/img/members/wmr.png">
-                        </div>
-                        <div class="feature-content">
-                            <div class="icons">
-                                <i class="fas fa-quote-left"></i>
-                            </div>
-                            <h6>王梦如</h6>
-                            <span>浙江大学博士生</span>
-                        </div>
-                    </div>
-                    <div class="feature-box-03" onclick="window.open('https://waltonfuture.github.io')">
-                        <div class="feature-img">
-                            <img src="assets/img/members/wl.png">
-                        </div>
-                        <div class="feature-content">
-                            <div class="icons">
-                                <i class="fas fa-quote-left"></i>
-                            </div>
-                            <h6>魏来</h6>
-                            <span>上海交通大学博士生</span>
-                        </div>
-                    </div>
-                    <div class="feature-box-03" onclick="window.open('https://zhaochen0110.github.io')">
-                        <div class="feature-img">
-                            <img src="assets/img/members/szc.png">
-                        </div>
-                        <div class="feature-content">
-                            <div class="icons">
-                                <i class="fas fa-quote-left"></i>
-                            </div>
-                            <h6>苏肇辰</h6>
-                            <span>香港科技大学博士生</span>
-                        </div>
-                    </div>
-                    <div class="feature-box-03" onclick="window.open('https://hemingkx.github.io/')">
-                        <div class="feature-img">
-                            <img src="assets/img/members/xhm.png">
-                        </div>
-                        <div class="feature-content">
-                            <div class="icons">
-                                <i class="fas fa-quote-left"></i>
-                            </div>
-                            <h6>夏鹤明</h6>
-                            <span>香港理工大学博士生</span><br/>
-                        </div>
-                    </div>
-                </div>
-                <div class="row section-heading justify-content-center">
-                    <div class="col-lg-6 text-center">
-                        <h3><span>senior committees</span></h3>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="feature-box-03" onclick="window.open('https://haofei.vip/')">
-                        <div class="feature-img">
-                            <img src="assets/img/members/fh.png">
-                        </div>
-                        <div class="feature-content">
-                            <div class="icons">
-                                <i class="fas fa-quote-left"></i>
-                            </div>
-                            <h6>费豪</h6>
-                            <span>新加坡国立大学  研究员</span>
-                        </div>
-                    </div>
-                    <div class="feature-box-03" onclick="window.open('https://bcmi.sjtu.edu.cn/~zhangzs/')">
-                        <div class="feature-img">
-                            <img src="assets/img/members/zzs.png">
-                        </div>
-                        <div class="feature-content">
-                            <div class="icons">
-                                <i class="fas fa-quote-left"></i>
-                            </div>
-                            <h6>张倬胜</h6>
-                            <span>上海交通大学 长聘教轨助理教授</span>
-                        </div>
-                    </div>
-                    <div class="feature-box-03" onclick="window.open('https://shi.buaa.edu.cn/liuzeming/zh_CN/index.htm')">
-                        <div class="feature-img">
-                            <img src="assets/img/members/lzm.png">
-                        </div>
-                        <div class="feature-content">
-                            <div class="icons">
-                                <i class="fas fa-quote-left"></i>
-                            </div>
-                            <h6>柳泽明</h6>
-                            <span>北京航空航天大学 助理教授</span>
-                        </div>
-                    </div>
-                    <div class="feature-box-03" onclick="window.open('https://weidixie.github.io/')">
-                        <div class="feature-img">
-                            <img src="assets/img/members/xwd.png">
-                        </div>
-                        <div class="feature-content">
-                            <div class="icons">
-                                <i class="fas fa-quote-left"></i>
-                            </div>
-                            <h6>谢伟迪</h6>
-                            <span>上海交通大学长聘轨副教授<br></span>
-                            <span>上海AI Lab青年科学家<br></span>
-                            <span>牛津大学VGG访问研究员<br></span>
-                        </div>
-                    </div>
-                    <div class="feature-box-03" onclick="window.open('https://chenkehai.github.io')">
-                        <div class="feature-img">
-                            <img src="assets/img/members/ckh.png">
-                        </div>
-                        <div class="feature-content">
-                            <div class="icons">
-                                <i class="fas fa-quote-left"></i>
-                            </div>
-                            <h6>陈科海</h6>
-                            <span>哈尔滨工业大学(深圳) 教授</span>
-                        </div>
-                    </div>
-                    <div class="feature-box-03" onclick="window.open('https://apeterswu.github.io')">
-                        <div class="feature-img">
-                            <img src="assets/img/members/wlj.png">
-                        </div>
-                        <div class="feature-content">
-                            <div class="icons">
-                                <i class="fas fa-quote-left"></i>
-                            </div>
-                            <h6>吴郦军</h6>
-                            <span>上海AI Lab青年科学家</span>
-                        </div>
-                    </div>
-                    <div class="feature-box-03" onclick="window.open('https://huishuai-git.github.io/')">
-                        <div class="feature-img">
-                            <img src="assets/img/members/zhs.png">
-                        </div>
-                        <div class="feature-content">
-                            <div class="icons">
-                                <i class="fas fa-quote-left"></i>
-                            </div>
-                            <h6>张辉帅</h6>
-                            <span>北京大学 王选计算机研究所 助理教授 </span>
-                        </div>
-                    </div>
-                    <div class="feature-box-03" onclick="window.open('https://person.zju.edu.cn/ningyu')">
-                        <div class="feature-img">
-                            <img src="assets/img/members/zny.png">
-                        </div>
-                        <div class="feature-content">
-                            <div class="icons">
-                                <i class="fas fa-quote-left"></i>
-                            </div>
-                            <h6> 张宁豫</h6>
-                            <span>浙江大学 副教授 </span>
-                        </div>
-                    </div>
-                    <div class="feature-box-03" onclick="window.open('https://jinlanfu.github.io/')">
-                        <div class="feature-img">
-                            <img src="assets/img/members/fjl.png">
-                        </div>
-                        <div class="feature-content">
-                            <div class="icons">
-                                <i class="fas fa-quote-left"></i>
-                            </div>
-                            <h6> 傅金兰</h6>
-                            <span>新加坡国立大学 研究员 </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="row section-heading justify-content-center">
-                    <div class="col-lg-6 text-center">
-                        <h3><span>Website Maintainers</span></h3>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="feature-box-03">
-                        <div class="feature-img">
-                            <img src="assets/img/members/hyl.png">
-                        </div>
-                        <div class="feature-content">
-                            <div class="icons">
-                                <i class="fas fa-quote-left"></i>
-                            </div>
-                            <h6>胡依璐</h6>
-                            <span>苏州大学硕士生</span>
-                        </div>
-                    </div>
-                    
-                    <div class="feature-box-03 placeholder d-none d-md-block"></div>
-                    <div class="feature-box-03 placeholder d-none d-md-block"></div>
-                </div>
-            </div>
-        </section> -->
-        <!-- End Work Section -->
         <!-- Contact Section -->
         <section data-scroll-index="4" id="contactus" class="section contactus-section bg-dark" style="height: 1px; background-image: url(assets/img/effect/bg-effect-3.png); background-repeat: no-repeat; background-size: cover; background-position: center; ">
             <div class="container">
@@ -2535,6 +2012,84 @@
     <script src="assets/vendor/load-more/jquery.easing.min.js"></script>
     <script src="assets/vendor/load-more/jquery.morecontent.js"></script>
     <script src="assets/vendor/tags/jquery.sTags.js"></script>
+
+    <script>
+        // 模拟你的数据
+        const allCommitteeMembers = [
+            { name: "华文越", role: "UCSB 博士后", image: "assets/img/members/hwy.png", website: "https://wenyueh.github.io/en/", committee: "Agent" },
+            //{ name: "Jiahao Qiu", role: "PhD at Princeton University", image: "assets/img/members/qjh.png", website: "https://x.com/jiahaoqiu99", committee: "Agent" },
+            { name: "范犁洲", role: "香港中文大学助理副校长", image: "assets/img/members/fll.png", website: "https://lizhouf.github.io/", committee: "Agent" },
+            { name: "苏肇辰", role: "香港科技大学博士生", image: "assets/img/members/szc.png", website: "https://zhaochen0110.github.io/", committee: "Agent" },
+            //{ name: "Canyu Chen", role: "PhD at Northwestern", image: "assets/img/members/ccy.png", website: "https://canyuchen.com/", committee: "Agent" },
+            //{ name: "Shaokun Zhang", role: "Ph.D. at The Pennsylvania State University", image: "assets/img/members/zsk.png", website: "https://skzhang1.github.io/", committee: "Agent" },
+            { name: "赵皓东", role: "上海交通大学博士生", image: "assets/img/members/zhd.png", website: "https://dongdongzhaoup.github.io/", committee: "Agent" },
+            { name: "王鸿儒", role: "香港中文大学博士生", image: "assets/img/members/whr.png", website: "https://hrwise-nlp.github.io/", committee: "Agent" },
+            //{ name: "Julie Chen", role: "", image: "assets/img/members/jc.png", website: "", committee: "Agent" },
+            //{ name: "Cheng Qian", role: "PhD at UIUC", image: "assets/img/members/qc.png", website: "https://qiancheng0.github.io/", committee: "Agent" },
+            { name: "刘鸿樟", role: "悉尼大学", image: "assets/img/members/lhz.png", website: "https://www.linkedin.com/in/alpha4ai/", committee: "Agent" },
+
+            // Reliability
+            { name: "薛博阳", role: "香港中文大学博士生", image: "assets/img/members/xby.png", website: "https://amourwaltz.github.io/", committee: "Reliability" },
+            { name: "杜晏睿", role: "哈工大博士生", image: "assets/img/members/dyr.png", website: "https://dyr1.github.io/", committee: "Reliability" },
+            { name: "赵皓东", role: "上海交通大学博士生", image: "assets/img/members/zhd.png", website: "https://dongdongzhaoup.github.io/", committee: "Reliability" },
+            { name: "吉嘉铭", role: "北大博士生", image: "assets/img/members/jjm.png", website: "https://jijiaming.com/", committee: "Reliability" },
+
+            // Interp			
+            { name: "王梦如", role: "浙江大学博士生", image: "assets/img/members/wmy.png", website: "https://scholar.google.com/citations?user=P3bp0egAAAAJ&hl=zh-CN", committee: "Interp" },
+            { name: "金明宇", role: "罗格斯大学博士生", image: "assets/img/members/jmy.png", website: "https://mingyuj666.github.io", committee: "Interp" },
+
+            //Efficient/Infra			
+            { name: "夏鹤明", role: "香港理工大学博士生", image: "assets/img/members/xhm.png", website: "https://hemingkx.github.io/", committee: "Efficient/Infra" },
+            { name: "章岳", role: "苏州大学研究生", image: "assets/img/members/zy.png", website: "https://hillzhang1999.github.io/", committee: "Efficient/Infra" },
+
+            // Reasoning
+            //{ name: "Zhongzhi Li", role: "Ph.D Student at CASIA", image: "assets/img/members/lzz.png", website: "https://zzli2022.github.io/", committee: "Reasoning" },
+            //{ name: "Xiao Liang", role: "PhD student at UCLA", image: "assets/img/members/lx.png", website: "https://mastervito.github.io/", committee: "Reasoning" },
+
+            // Human-centered NLP			
+            { name: "聂耳聪", role: "慕尼黑大学博士生", image: "assets/img/members/nec.png", website: "https://ercong21.github.io", committee: "Human-centered NLP" },
+            { name: "王铭阳", role: "慕尼黑大学博士生", image: "assets/img/members/wmy.png", website: "https://mingyang-wang26.github.io/", committee: "Human-centered NLP" },
+            { name: "朱文昊", role: "字节跳动研究员", image: "assets/img/members/zww.png", website: "https://owennju.github.io/", committee: "Human-centered NLP" },
+
+            // Multimodal						
+            { name: "饶珈源", role: "上交&上海AI Lab博士生", image: "assets/img/members/rjy.png", website: "https://jyrao.github.io", committee: "Multimodal" },
+            { name: "李磊", role: "香港大学博士生", image: "assets/img/members/ll.png", website: "https://lilei-nlp.github.io", committee: "Multimodal" },
+            { name: "魏来", role: "上海交通大学博士生", image: "assets/img/members/wl.png", website: "https://waltonfuture.github.io", committee: "Multimodal" },
+            { name: "罗盟", role: "新加坡国立大学博士生", image: "assets/img/members/lm.png", website: "https://eurekaleo.github.io/", committee: "Multimodal" },
+
+            // Evaluation			
+            //{ name: "Dawei Li", role: "PhD student at SCAI@ASU", image: "assets/img/members/hwy.png", website: "https://david-li0406.github.io/", committee: "Evaluation" },
+            { name: "王存翔", role: "清华博后/智谱研究员", image: "assets/img/members/wcx.png", website: "https://wangcunxiang.github.io/", committee: "Evaluation" },
+            { name: "张启源", role: "香港城市大学博士生", image: "assets/img/members/zqy.png", website: "https://zhangqiyuan-rico.github.io/", committee: "Evaluation" },
+            //{ name: "Shenglai Zeng", role: "PhD Student at Michigan State University", image: "assets/img/members/hwy.png", website: "http://slz-ai.github.io/", committee: "Evaluation" },
+        ];
+
+        // 使用 map 生成 HTML 字符串
+        const memberHTML = allCommitteeMembers.map(member => {
+            const cleanWebsite = member.website.trim();
+            const imgSrc = member.image.replace('', '');
+            const committeeLower = member.committee.toLowerCase();
+
+            return `
+                <div class="col-xl-3 col-lg-4 col-md-6 member-card" data-committee="${committeeLower}" onclick="window.open('${cleanWebsite}')">
+                    <div class="d-flex justify-content-center flex-column">
+                        <div class="member-img">         
+                            <img src="${imgSrc}" alt="${member.name}">
+                        </div>
+                        <div class="member-info text-center">
+                            <div class="icons">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <h6 class="member-name">${member.name}</h6>
+                            <span>${member.role}</span>
+                        </div>
+                    </div>
+                </div>`;
+        }).join('');
+
+        // 插入到页面
+        document.getElementById('members-container').innerHTML = memberHTML;
+    </script>
     <!-- end -->
     <!-- <script>
         $('.some-list').simpleLoadMore({

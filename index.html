@@ -90,8 +90,65 @@
         </section>
         <!-- End Home Section -->
 
+</head>
+<body>
+
+        <section id="introduction" data-scroll-index="1" class="section features-section section-padding services-section">
+            <div class="container">
+                <div class="row text-center mb-5">
+                    <div>
+                        <h2 class="section-title">关于我们</h2>
+                        <p class="section-subtitle"></p>
+                        <p class="section-subtitle">NICE（NLP Academic Exchange Platform）是一个专门面向中文NLP领域的青年学者学术交流平台，由众多高校一线科研同学共同创建。</p>
+                        <p class="section-subtitle">在ChatGPT时代下论文的idea日新月异，旨在做一个能够每周及时分享最新的、最有意义的前沿论文平台。希望能做到一个承上启下的作用，既能帮助学者分享自己的学术成果、跳出自己的圈子认识其他伙伴的同时，又能带动更年轻的未来学者顺利进入NLP的殿堂，一起促进国内NLP的蓬勃发展。</p>
+                    </div>
+                </div>
+
+                <div class="about-sponsor" > 
+                    <span class="sponsor-text">Sponsor</span>
+                    <img class="sponsor-img hover-effect" src="assets/img/cipsc.png" height="100px" style="margin-left: 10px; margin-right: 20px;">
+                    <img class="sponsor-img hover-effect" src="assets/img/suda2.png" height="100px" style="margin-left: 10px;" onclick="window.open('https://opennlg.cn')">
+                </div>
+
+                <br></br>
+
+                <div class="row">
+                <!-- Feature Item 1 -->
+                    <div class="col-md-4 mb-4" data-aos-delay="0">
+                        <div class="feature-card">
+                            <!-- <div class="feature-icon-wrapper">🔬</div> -->
+                            <p class="feature-description" data-end="150" data-suffix="+">0+</p>
+                            <h3 class="feature-title">邀请嘉宾</h3>
+                        </div>
+                    </div>
+
+                <!-- Feature Item 2 -->
+                    <div class="col-md-4 mb-4" data-aos-delay="100">
+                        <div class="feature-card">
+                            <!-- <div class="feature-icon-wrapper">🌐</div> -->
+                            <p class="feature-description" data-end="130000" data-suffix="+">0+</p>
+                            <h3 class="feature-title">粉丝量</h3>
+                        </div>
+                    </div>
+
+                <!-- Feature Item 3 -->
+                    <div class="col-md-4 mb-4" data-aos-delay="200">
+                        <div class="feature-card">
+                    
+                            <p class="feature-description" data-end="7000000" data-suffix="+">0+</p>
+                            <h3 class="feature-title">播放量</h3>
+                        </div>
+                    </div>
+                </div>
+<!--                 
+                <br></br>
+
+                <br></br> -->
+            </div>
+        </section>
+
         <!-- Services Section -->
-        <section id="introduction" data-scroll-index="1" class="section services-section">
+        <!-- <section id="introduction" data-scroll-index="1" class="section services-section">
             <div class="container">
                 <div class="row section-heading justify-content-center">
                     <div class="col-lg-6 text-center">
@@ -110,7 +167,7 @@
                             <img class="sponsor-img hover-effect" src="assets/img/suda2.png" height="100px" style="margin-left: 10px;" onclick="window.open('https://opennlg.cn')">
                     </div>
             </div>
-        </section>
+        </section> -->
         <!-- End Services Section -->
 
         <!-- Portfolio Section -->
@@ -2117,6 +2174,46 @@
             }
 	    });
     </script> -->
+
+    <script>
+    // 简易 CountUp 函数
+    function animateValue(element, start, end, duration) {
+        let startTime = null;
+        const range = end - start;
+        const step = (timestamp) => {
+        if (!startTime) startTime = timestamp;
+        const progress = Math.min((timestamp - startTime) / duration, 1);
+        const value = Math.floor(progress * range + start);
+        element.innerText = value.toLocaleString() + element.dataset.suffix;
+        if (progress < 1) window.requestAnimationFrame(step);
+        };
+        window.requestAnimationFrame(step);
+    }
+
+    // Intersection Observer
+    document.addEventListener("DOMContentLoaded", () => {
+        const cards = document.querySelectorAll(".feature-card");
+
+        const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+            const card = entry.target;
+            card.classList.add("visible");
+
+            const desc = card.querySelector(".feature-description");
+            const end = parseInt(desc.dataset.end);
+            animateValue(desc, 0, end, 2500);
+
+            observer.unobserve(card); // 只触发一次
+            }
+        });
+        }, { threshold: 0.2 });
+
+        cards.forEach(card => {
+        observer.observe(card);
+        });
+    });
+    </script>
 </body>
 <!-- Body End -->
 

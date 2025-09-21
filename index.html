@@ -2016,30 +2016,35 @@
     <script>
         // 模拟你的数据
         const allCommitteeMembers = [
-            { name: "华文越", role: "UCSB 博士后", image: "assets/img/members/hwy.png", website: "https://wenyueh.github.io/en/", committee: "Agent" },
+            //{ name: "Wenyue Hua", role: "Post-Doc at UCSB", image: "assets/img/members/hwy.png", website: "https://wenyueh.github.io/en/", committee: "Agent" },
             //{ name: "Jiahao Qiu", role: "PhD at Princeton University", image: "assets/img/members/qjh.png", website: "https://x.com/jiahaoqiu99", committee: "Agent" },
             { name: "范犁洲", role: "香港中文大学助理副校长", image: "assets/img/members/fll.png", website: "https://lizhouf.github.io/", committee: "Agent" },
             { name: "苏肇辰", role: "香港科技大学博士生", image: "assets/img/members/szc.png", website: "https://zhaochen0110.github.io/", committee: "Agent" },
+            //{ name: "Lizhou Fan", role: "Vice-Chancellor Assistant Professor at CUHK", image: "assets/img/members/fll.png", website: "https://lizhouf.github.io/", committee: "Agent" },
+            //{ name: "Zhaochen Su", role: "PhD at HKUST", image: "assets/img/members/szc.png", website: "https://zhaochen0110.github.io/", committee: "Agent" },
             //{ name: "Canyu Chen", role: "PhD at Northwestern", image: "assets/img/members/ccy.png", website: "https://canyuchen.com/", committee: "Agent" },
             //{ name: "Shaokun Zhang", role: "Ph.D. at The Pennsylvania State University", image: "assets/img/members/zsk.png", website: "https://skzhang1.github.io/", committee: "Agent" },
             { name: "赵皓东", role: "上海交通大学博士生", image: "assets/img/members/zhd.png", website: "https://dongdongzhaoup.github.io/", committee: "Agent" },
             { name: "王鸿儒", role: "香港中文大学博士生", image: "assets/img/members/whr.png", website: "https://hrwise-nlp.github.io/", committee: "Agent" },
-            //{ name: "Julie Chen", role: "", image: "assets/img/members/jc.png", website: "", committee: "Agent" },
-            //{ name: "Cheng Qian", role: "PhD at UIUC", image: "assets/img/members/qc.png", website: "https://qiancheng0.github.io/", committee: "Agent" },
-            { name: "刘鸿樟", role: "悉尼大学", image: "assets/img/members/lhz.png", website: "https://www.linkedin.com/in/alpha4ai/", committee: "Agent" },
+            // { name: "Hongru Wang", role: "PhD at CUHK", image: "assets/img/members/whr.png", website: "https://hrwise-nlp.github.io/", committee: "Agent" },
+            // { name: "Julie Chen", role: "", image: "assets/img/members/jc.png", website: "", committee: "Agent" },
+            // { name: "Cheng Qian", role: "PhD at UIUC", image: "assets/img/members/qc.png", website: "https://qiancheng0.github.io/", committee: "Agent" },
+            // { name: "Hongzhang Liu", role: "USYD", image: "assets/img/members/lhz.png", website: "https://www.linkedin.com/in/alpha4ai/", committee: "Agent" },
 
             // Reliability
             { name: "薛博阳", role: "香港中文大学博士生", image: "assets/img/members/xby.png", website: "https://amourwaltz.github.io/", committee: "Reliability" },
+            // { name: "Boyang Xue", role: "PhD at CUHK", image: "assets/img/members/xby.png", website: "https://amourwaltz.github.io/", committee: "Reliability" },
             { name: "杜晏睿", role: "哈工大博士生", image: "assets/img/members/dyr.png", website: "https://dyr1.github.io/", committee: "Reliability" },
             { name: "赵皓东", role: "上海交通大学博士生", image: "assets/img/members/zhd.png", website: "https://dongdongzhaoup.github.io/", committee: "Reliability" },
             { name: "吉嘉铭", role: "北大博士生", image: "assets/img/members/jjm.png", website: "https://jijiaming.com/", committee: "Reliability" },
 
             // Interp			
             { name: "王梦如", role: "浙江大学博士生", image: "assets/img/members/wmy.png", website: "https://scholar.google.com/citations?user=P3bp0egAAAAJ&hl=zh-CN", committee: "Interp" },
-            { name: "金明宇", role: "罗格斯大学博士生", image: "assets/img/members/jmy.png", website: "https://mingyuj666.github.io", committee: "Interp" },
+            // { name: "Mingyu Jin", role: "PhD at Rutgers University", image: "assets/img/members/jmy.png", website: "https://mingyuj666.github.io", committee: "Interp" },
 
             //Efficient/Infra			
             { name: "夏鹤明", role: "香港理工大学博士生", image: "assets/img/members/xhm.png", website: "https://hemingkx.github.io/", committee: "Efficient/Infra" },
+            // { name: "Heming Xia", role: "PHD at PolyU", image: "assets/img/members/xhm.png", website: "https://hemingkx.github.io/", committee: "Efficient/Infra" },
             { name: "章岳", role: "苏州大学研究生", image: "assets/img/members/zy.png", website: "https://hillzhang1999.github.io/", committee: "Efficient/Infra" },
 
             // Reasoning
@@ -2047,20 +2052,23 @@
             //{ name: "Xiao Liang", role: "PhD student at UCLA", image: "assets/img/members/lx.png", website: "https://mastervito.github.io/", committee: "Reasoning" },
 
             // Human-centered NLP			
-            { name: "聂耳聪", role: "慕尼黑大学博士生", image: "assets/img/members/nec.png", website: "https://ercong21.github.io", committee: "Human-centered NLP" },
-            { name: "王铭阳", role: "慕尼黑大学博士生", image: "assets/img/members/wmy.png", website: "https://mingyang-wang26.github.io/", committee: "Human-centered NLP" },
+            // { name: "ErCong Nie", role: "PhD at LMU", image: "assets/img/members/nec.png", website: "https://ercong21.github.io", committee: "Human-centered NLP" },
+            //{ name: "Mingyang Wang", role: "PhD at LMU", image: "assets/img/members/wmy.png", website: "https://mingyang-wang26.github.io/", committee: "Human-centered NLP" },
             { name: "朱文昊", role: "字节跳动研究员", image: "assets/img/members/zww.png", website: "https://owennju.github.io/", committee: "Human-centered NLP" },
 
             // Multimodal						
             { name: "饶珈源", role: "上交&上海AI Lab博士生", image: "assets/img/members/rjy.png", website: "https://jyrao.github.io", committee: "Multimodal" },
             { name: "李磊", role: "香港大学博士生", image: "assets/img/members/ll.png", website: "https://lilei-nlp.github.io", committee: "Multimodal" },
+            // { name: "Lei Li", role: "PhD at HKU", image: "assets/img/members/ll.png", website: "https://lilei-nlp.github.io", committee: "Multimodal" },
             { name: "魏来", role: "上海交通大学博士生", image: "assets/img/members/wl.png", website: "https://waltonfuture.github.io", committee: "Multimodal" },
             { name: "罗盟", role: "新加坡国立大学博士生", image: "assets/img/members/lm.png", website: "https://eurekaleo.github.io/", committee: "Multimodal" },
+            // { name: "Meng Luo", role: "PHD at NUS", image: "assets/img/members/lm.png", website: "https://eurekaleo.github.io/", committee: "Multimodal" },
 
             // Evaluation			
             //{ name: "Dawei Li", role: "PhD student at SCAI@ASU", image: "assets/img/members/hwy.png", website: "https://david-li0406.github.io/", committee: "Evaluation" },
             { name: "王存翔", role: "清华博后/智谱研究员", image: "assets/img/members/wcx.png", website: "https://wangcunxiang.github.io/", committee: "Evaluation" },
             { name: "张启源", role: "香港城市大学博士生", image: "assets/img/members/zqy.png", website: "https://zhangqiyuan-rico.github.io/", committee: "Evaluation" },
+            // { name: "Qiyuan Zhang", role: "Ph.D. Student at City University of Hong Kong", image: "assets/img/members/zqy.png", website: "https://zhangqiyuan-rico.github.io/", committee: "Evaluation" },
             //{ name: "Shenglai Zeng", role: "PhD Student at Michigan State University", image: "assets/img/members/hwy.png", website: "http://slz-ai.github.io/", committee: "Evaluation" },
         ];
 
